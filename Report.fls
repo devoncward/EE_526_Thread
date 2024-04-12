@@ -7,6 +7,8 @@ INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\graphics\epsfig.sty
+INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\graphics\epsfig.sty
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
@@ -21,6 +23,12 @@ INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\grap
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\tools\xspace.sty
+INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\tools\xspace.sty
+INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\preprint\authblk.sty
+INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\preprint\authblk.sty
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\biblatex.sty
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\biblatex.sty
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
@@ -44,8 +52,6 @@ INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\logreq\logreq.def
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\logreq\logreq.def
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
-INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
-INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\blx-dm.def
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\blx-dm.def
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\blx-dm.def
@@ -98,18 +104,7 @@ INPUT .\Report.bbl
 INPUT Report.bbl
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
-INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
-INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
-INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
-INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
-INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm
-INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy8.tfm
-INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
-INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
 OUTPUT Report.pdf
 INPUT C:\Users\dward28\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT Report.aux
@@ -123,5 +118,3 @@ INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
-INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
-INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
