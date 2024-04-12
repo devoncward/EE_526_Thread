@@ -1,1 +1,2 @@
 # EE_526_Thread
+Our project consists of creating a thread network inside the Clyde building allowing us to communicate with a user in the basement while being in our graduate lab on the 4th floor... for fun :) 
