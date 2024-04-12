@@ -24,7 +24,7 @@ sorting=ynt
 
 Thread is a mesh networking protocol which has been developed mainly for smart home devices \cite*{thread_website}. The main idea is to remove a single point of failure for the networking smart home devices, allowing them to communicate with each other and avoid having a potential problem where one device fails, taking down the entire network. Another beneficial aspect of thread is that it is designed to be low power \cite*{Thread_paper_1}, which is also a really good thing for IoT devices, which are often power constrained. 
 
-One problem that Thread networks have currently is that they are not very well tested. There are many sources that have successfully tested Thread networks and proven that they can operate in a noisy environment \cite*{Thread_noisy_env} but very little to classify their performance in indoor urban environments. Work has previously been done to quantify the throughput of Thread networks in an indoor area \cite*{Thread_on_drones} but most publications are focused on throughput achievements, rather than distance and reliability.  
+One problem that Thread networks have currently is that they are not very well tested. There are many sources that have successfully tested Thread networks and proven that they can operate in a noisy environment but most publications are focused on throughput achievements, rather than distance and reliability.  
 
 Our project seeks to attempt to classify the performance of Thread in the Clyde engineering building at Brigham Young University, and determine if a Thread network is capable of allowing two users to communicate from the graduate research lab in CB 480 to anywhere in the Clyde building. In doing so, we also seek to understand how many nodes are required to allow for uninterrupted communication in the Clyde building. 
 
@@ -34,11 +34,27 @@ We found that we only required one Thread router node, one parent node, and one 
 
 \subsection*{Related Work}
 
-Summarize the existing work related to your problem.
+There are many sources that have successfully tested Thread networks and proven that they can operate in a noisy environment \cite*{Thread_noisy_env} but very little to classify their performance in indoor urban environments. Work has previously been done to quantify the throughput of Thread networks in an indoor area \cite*{Thread_on_drones} \cite*{Thread_lightbulb} but most publications are focused on throughput achievements, rather than distance and reliability.
+
+Many tutorials exist for building a Thread network with an ESP32 \cite*{Thread_tutorial} as well as details on how to implement the design and program the microcontroller \cite*{Thread_tutorial_2} to run the thread network.  
+
+There are papers that discuss distance as a metric for the Thread network operating \cite*{Thread_wheelchair} that talk about the jitter in the network. However, they do not discuss the maximum distance for transmission when the Thread mesh breaks down. For our project we wanted to investigate the maximum transmission distance for an indoor environment containing lots of metal doors over multiple floors, something that is not present in the current literature. 
 
 \subsection*{Methodology}
 
-Describe your solution and any other methods you have used to solve your problem.
+We approached our problem in the following steps: 
+\begin{enumerate}
+    \item Program the ESP32-h to run a thread network
+    \item Set up a TCP thread connection built on top of UDP to allow secure reliable communication over the thread network to measure performance
+    \item Measure distance leader and child thread devices can communicate
+    \item Add router thread nodes until we can map the entire Clyde building
+\end{enumerate}
+
+In order to program the ESP32-h devices, we used ESPRESSIF's tutorials which allow us to flash the ESP32 devices with an already functional thread network. This significantly reduced the time for development of the thread network. 
+
+Second, we wanted to set up a TCP connection. This is unintuitive because thread by design uses UDP, and there is no real sense of acknowledgements, since the mesh network is utilizing router devices to send UDP packets from the leader to the child nodes. However, we want to see when we lose connection with the child nodes as we walk around in the Clyde building. Therefore, we use a TCP client built on top of the UDP client to see when we stop receiving acknowledgement packets from the child to the leader node. 
+
+Once the TCP mesh network is set up and running, we then walk around the Clyde building with only the leader and child, and categorize the number of walls we can transmit through, and the standard distance we can communicate. By doing this we can find the blind spots of the Clyde building that we cannot reach without router nodes in the mesh network. Then we add single router nodes one at a time and see how many router nodes we need to cover all of our previously identified blind spots and have reliable communication throughout the entire Clyde building. 
 
 \subsection*{Implementation/Experimentation}
 

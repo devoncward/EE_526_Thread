@@ -105,13 +105,13 @@ INPUT Report.bbl
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+OUTPUT Report.pdf
+INPUT C:\Users\dward28\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
 INPUT C:\Users\dward28\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm
-OUTPUT Report.pdf
-INPUT C:\Users\dward28\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT Report.aux
 INPUT Report.run.xml
 OUTPUT Report.run.xml

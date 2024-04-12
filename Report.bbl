@@ -92,6 +92,55 @@
       \endverb
       \keyw{Thread;mesh;IoT;IoTSP;Smart City;Smart home;Bluetooth mesh;ZigBee;SigFox;LoRa;NB-IoT}
     \endentry
+    \entry{Thread_lightbulb}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=82918851f2c1cd9be2116560f37eab15}{%
+           family={Sistu},
+           familyi={S\bibinitperiod},
+           given={Srikanth},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9a06783737048e5277d3be3155a21484}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Qingzhi},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=9d846115a57b01543f0f2bebe5563dd1}{%
+           family={Ozcelebi},
+           familyi={O\bibinitperiod},
+           given={Tanir},
+           giveni={T\bibinitperiod}}}%
+        {{hash=2d89569ba53588c70775e3d92e53087e}{%
+           family={Dijk},
+           familyi={D\bibinitperiod},
+           given={Esko},
+           giveni={E\bibinitperiod}}}%
+        {{hash=b58749ea4b51fd09a906ea8af905d1c9}{%
+           family={Zotti},
+           familyi={Z\bibinitperiod},
+           given={Teresa},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{9d5cf06227e4fb9fe44e320dfe00a9fd}
+      \strng{fullhash}{4a6705264fa438e726b04a784cec6827}
+      \strng{bibnamehash}{9d5cf06227e4fb9fe44e320dfe00a9fd}
+      \strng{authorbibnamehash}{9d5cf06227e4fb9fe44e320dfe00a9fd}
+      \strng{authornamehash}{9d5cf06227e4fb9fe44e320dfe00a9fd}
+      \strng{authorfullhash}{4a6705264fa438e726b04a784cec6827}
+      \field{labelalpha}{Sis+19}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2019 International Symposium on Networks, Computers and Communications (ISNCC)}
+      \field{title}{Performance Evaluation of Thread Protocol based Wireless Mesh Networks for Lighting Systems}
+      \field{year}{2019}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/ISNCC.2019.8909109
+      \endverb
+      \keyw{Message systems;Lighting;Protocols;Unicast;IEEE 802.15 Standard;Synchronization;Network topology}
+    \endentry
     \entry{Thread_on_drones}{inproceedings}{}
       \name{author}{4}{}{%
         {{hash=0ab17895bf9a048e79cf235be879bc0e}{%
@@ -135,6 +184,102 @@
       \verb 10.1109/PerComWorkshops56833.2023.10150308
       \endverb
       \keyw{Pervasive computing;Mesh networks;Protocols;Conferences;Bit rate;Prototypes;Throughput;Flying Mesh Networks;IoT;OpenThread;CrazyFlie}
+    \endentry
+    \entry{Thread_wheelchair}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=cd85b3385bd667691e864cd65001ac1d}{%
+           family={Khattak},
+           familyi={K\bibinitperiod},
+           given={Sohaib\bibnamedelimb Bin\bibnamedelima Altaf},
+           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=7178e34d85c592878f203add004b6729}{%
+           family={Farman},
+           familyi={F\bibinitperiod},
+           given={Haleem},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e43dca35ea70a15e3adfdc81208238fa}{%
+           family={Nasralla},
+           familyi={N\bibinitperiod},
+           given={Moustafa\bibnamedelima M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=ec470948e10bd57d24e76f1854d0855e}{%
+           family={Esmail},
+           familyi={E\bibinitperiod},
+           given={Maged\bibnamedelima Abdullah},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{5e6169d3a3bcad7d9248edb55c6a4dc8}
+      \strng{fullhash}{7b418c4d5a8ca2cbddbbb24a62f5133a}
+      \strng{bibnamehash}{5e6169d3a3bcad7d9248edb55c6a4dc8}
+      \strng{authorbibnamehash}{5e6169d3a3bcad7d9248edb55c6a4dc8}
+      \strng{authornamehash}{5e6169d3a3bcad7d9248edb55c6a4dc8}
+      \strng{authorfullhash}{7b418c4d5a8ca2cbddbbb24a62f5133a}
+      \field{labelalpha}{Kha+23}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2023 IEEE International Smart Cities Conference (ISC2)}
+      \field{title}{Enhancing Wheelchair Communications Utilizing Thread Protocol for Improved Patient Safety}
+      \field{year}{2023}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ISC257844.2023.10293573
+      \endverb
+      \keyw{Performance evaluation;Wireless LAN;Smart cities;Instruction sets;Wheelchairs;Medical services;Routing;Thread Protocol;Persons with Disability;Smart Wheelchair;Patient Safety}
+    \endentry
+    \entry{Thread_tutorial_2}{online}{}
+      \name{author}{1}{}{%
+        {{hash=789c376b43dbba68180fd04da73286da}{%
+           family={ESP32},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{789c376b43dbba68180fd04da73286da}
+      \strng{fullhash}{789c376b43dbba68180fd04da73286da}
+      \strng{bibnamehash}{789c376b43dbba68180fd04da73286da}
+      \strng{authorbibnamehash}{789c376b43dbba68180fd04da73286da}
+      \strng{authornamehash}{789c376b43dbba68180fd04da73286da}
+      \strng{authorfullhash}{789c376b43dbba68180fd04da73286da}
+      \field{labelalpha}{ESP}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(accessed: 04.12.2024)}
+      \field{title}{Networking API - Thread}
+      \verb{urlraw}
+      \verb https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/network/esp_openthread.html
+      \endverb
+      \verb{url}
+      \verb https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/network/esp_openthread.html
+      \endverb
+    \endentry
+    \entry{Thread_tutorial}{online}{}
+      \name{author}{1}{}{%
+        {{hash=02d5db32fe94835b97fedc0a1718160c}{%
+           family={OpenThread},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{02d5db32fe94835b97fedc0a1718160c}
+      \strng{fullhash}{02d5db32fe94835b97fedc0a1718160c}
+      \strng{bibnamehash}{02d5db32fe94835b97fedc0a1718160c}
+      \strng{authorbibnamehash}{02d5db32fe94835b97fedc0a1718160c}
+      \strng{authornamehash}{02d5db32fe94835b97fedc0a1718160c}
+      \strng{authorfullhash}{02d5db32fe94835b97fedc0a1718160c}
+      \field{labelalpha}{Ope}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{addendum}{(accessed: 04.12.2024)}
+      \field{title}{Build a Thread Network with the ESP32H2 and ESP Thread Border Router Board}
+      \verb{urlraw}
+      \verb https://openthread.io/codelabs/esp-openthread-hardware#1
+      \endverb
+      \verb{url}
+      \verb https://openthread.io/codelabs/esp-openthread-hardware#1
+      \endverb
     \endentry
     \entry{thread_website}{online}{}
       \name{author}{1}{}{%
