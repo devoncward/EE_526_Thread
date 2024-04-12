@@ -3,6 +3,14 @@
 \usepackage{graphicx}
 \graphicspath{ {./images/} }
 
+\usepackage[
+backend=biber,
+style=alphabetic,
+sorting=ynt
+]{biblatex}
+
+\addbibresource{references.bib}
+
 \title{Thread Network Report}
 \author{Devon Ward, Daniel Harman}
 
@@ -10,7 +18,18 @@
 
 \maketitle
 
-\subsection*{Part 1}
+\subsection*{Introduction}
+We used the book \cite*{texbook} in our work
+\subsection*{Related Work}
 
+\subsection*{Methodology}
+
+\subsection*{Implementation}
+
+\subsection*{Experimentation}
+
+\subsection*{Conclusion}
+
+\printbibliography
 
 \end{document}
