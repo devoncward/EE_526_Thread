@@ -5,6 +5,13 @@
 \usepackage{graphicx}
 \graphicspath{ {./images/} }
 
+\usepackage{listings}
+\lstset{
+basicstyle=\small\ttfamily,
+columns=flexible,
+breaklines=true
+}
+
 \usepackage[
 backend=biber,
 style=alphabetic,
@@ -59,11 +66,9 @@ Once the TCP mesh network is set up and running, we then walk around the Clyde b
 \subsection*{Implementation/Experimentation}
 
 % Describe your experiments and your results. Discuss your results.
-\subsection{Programming the ESP32h2 Module}
+\subsection{Programming ESP32h2 Module}
 
-The ESP32h2 module is a relatively new chip from Espressif, meaning that support for it has not made it to the larger space of IDE's, such as Arduino or VScode's extension Platform.io. Thus, we installed the VScode Espressif IDF extension, which is developed and supported by Espressif as direct access to their software development kit (SDK). The extension conveniently has access to each of their tutorials \cite*{Thread_tutorial_2}. We used the tutorial "ot\_cli", or OpenThread Command Line Interface. The program allows an instance of OpenThread, an open source implementation of the Thread standard to be run via a command line interface with the ESP32 using a serial port connection. 
-
-Opening the project in VScode via the Espressif IDF extension allows you to 
+The ESP32h2 module is a relatively new chip from Espressif, meaning that support for it has not made it to the larger space of IDE's, such as Arduino or VScode's extension Platform.io. Thus, we installed the VScode Espressif IDF extension, which is developed and supported by Espressif as direct access to their software development kit (SDK). The extension conveniently has access to each of their tutorials \cite*{Thread_tutorial_2}. We used the tutorial "ot\_cli", or OpenThread Command Line Interface. The program allows an instance of OpenThread, an open source implementation of the Thread standard to be run via a command line interface with the ESP32 using a serial port connection. Opening the project in VScode via the Espressif IDF extension allows you to 
 \begin{enumerate}
     \item Select a connected USB device/port
     \item Build the example project
@@ -80,7 +85,7 @@ Opening the project in VScode via the Espressif IDF extension allows you to
 \subsection{Setting up the Thread Network}
 
 Once flashed, a serial connection needs to be established with the ESP32 to setup the thread network and send messages. We used the Minicom serial port terminal emulator for Linux, with settings as displayed in \ref{fig:minicom}. Once connected, we ran the following to setup a Thread network for the network leader. A network leader is a role within a Thread mesh, that provides a key used to join the network and as well as assuming some necessary centralized functions for the network. To set up the network, we ran:
-\begin{verbatim}
+\begin{lstlisting}
 > factoryreset
 > dataset init new
 > dataset commit active
@@ -89,42 +94,42 @@ Once flashed, a serial connection needs to be established with the ESP32 to setu
 > state
 > ipaddr
 > dataset active -x
-\end{verbatim}
+\end{lstlisting}
 
 The last two commands are how the IPv6 address for the leader and the Thread network key are found respectively. These need to be copied over for the other devices to use to join the network and to setup a TCP socket with the leader for testing purposes.
 
 For the child devices (those on the network, but not the leader), we connected to the network using:
 
-\begin{verbatim}
+\begin{lstlisting}
 > factory reset
 > dataset set active $PUT THREAD KEY HERE$
 > ipconfig up
 > thread start
 > state
-\end{verbatim}
+\end{lstlisting}
 
 Note the state is just a test to establish connection to the network and status within the network.
 
 \subsection{Setting up the TCP connection}
 
 For the server side, we used the following:
-\begin{verbatim}
+\begin{lstlisting}
 > tcpsockserver open
 > tcpsockserver bind :: 12345
 > tcpsockserver send MESSAGE_WITH_NO_SPACES
-\end{verbatim}
+\end{lstlisting}
 and for the client side we connect to the open socket by using:
-\begin{verbatim}
+\begin{lstlisting}
 > tcpsockclient open
 > tcpsockclient connect $PUT IPV6 ADDR HERE$ 12345
 > tcpsockclient send $MESSAGE_WITH_NO_SPACES$
-\end{verbatim}
+\end{lstlisting}
 
 \subsection{Experiment}
 
-The experiment that we ran involved running 3 thread devices to determine the maximum length of connectivity that the mesh could support. The leader was in the ECEn graduate student lab as a stationary device. The other two were connected to laptops and moved throughout the Clyde Engineering building. The path taken is shown in Fig. \ref{fig:clyde}. Connection to the leader was strong through out the 4th, 3rd and most of the 2nd floor. The connection began to break down when entering the basement, but strategic placement of the intermediate node allowed the client to get TCP packet through. Even intermittent service outside was possible. 
+The experiment that we ran involved running 3 Thread devices to determine the maximum length of connectivity that the mesh could support. The leader was in the ECEn graduate student lab as a stationary device. The other two were connected to laptops and moved throughout the Clyde Engineering building. The path taken is shown in Fig. \ref{fig:clyde}. Connection to the leader was strong through out the 4th, 3rd and most of the 2nd floor. The connection began to break down when entering the basement, but strategic placement of the intermediate node allowed the client to get TCP packet through. Even intermittent service outside was possible. 
 
-\begin{figure}
+\begin{figure}[h]
     \centering
     \includegraphics[width=0.75\linewidth]{Figures/Clyde_Map.png}
     \caption{Map of Experiment Path Taken}
@@ -147,13 +152,11 @@ Fig. \ref{fig:mesh_setup} shows the output of the mesh following a successful se
     \label{fig:mesh_setup}
 \end{figure}
 
-To determine if the 3rd device actually played a significant role, we shut it down for a time and re-walked many of the same areas. The connection between leader and child was essentially the same, meaning that there really wasn't a significant advantage introduced by the intermediate device, which is unfortunate for Thread, but demonstrates the robustness of Zigbee.
+To determine if the 3rd device actually played a significant role, we shut it down for a time and re-walked many of the same areas in the basement and the 1st floor of the Clyde building. The connection between leader and child was essentially the same except for specific spots in the basement, meaning that there really wasn't a significant advantage introduced by the intermediate device, which is unfortunate for Thread, but demonstrates the robustness of Zigbee.
 
 \subsection*{Conclusion}
 
 Thread is an interesting protocol with potential for many applications. It does not however offer much in terms of the meshing, over direct connections between Zigbee devices. The software support and marketing of these devices will need to increase though before they can reach their full realization and improvements.
-
-% \subsection*{References}
 
 \printbibliography
 

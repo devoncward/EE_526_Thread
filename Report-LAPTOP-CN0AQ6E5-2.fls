@@ -122,12 +122,7 @@ INPUT .\Figures\minicom_screenshot.png
 INPUT .\Figures\minicom_screenshot.png
 INPUT .\Figures\minicom_screenshot.png
 INPUT .\Figures\minicom_screenshot.png
-INPUT C:\Users\devon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr9.tfm
-INPUT C:\Users\devon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt9.tfm
-INPUT C:\Users\devon\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmtt.fd
-INPUT C:\Users\devon\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmtt.fd
-INPUT C:\Users\devon\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmtt.fd
-INPUT C:\Users\devon\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tctt0900.tfm
+INPUT C:\Users\devon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm
 INPUT .\Figures\Clyde_Map.png
 INPUT .\Figures\Clyde_Map.png
 INPUT .\Figures\Clyde_Map.png
@@ -153,12 +148,9 @@ INPUT C:\Users\devon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\devon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\devon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
 INPUT C:\Users\devon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
-INPUT C:\Users\devon\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm
 INPUT Report.aux
 INPUT Report.run.xml
 OUTPUT Report.run.xml
-INPUT C:\Users\devon\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tctt0900.pk
-INPUT C:\Users\devon\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tctt0900.pk
 INPUT C:\Users\devon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\devon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\devon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
@@ -173,5 +165,3 @@ INPUT C:\Users\devon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\devon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
 INPUT C:\Users\devon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt10.pfb
 INPUT C:\Users\devon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt10.pfb
-INPUT C:\Users\devon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt9.pfb
-INPUT C:\Users\devon\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt9.pfb

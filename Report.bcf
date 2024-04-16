@@ -2370,6 +2370,7 @@
     <bcf:citekey order="7" intorder="1">Thread_tutorial</bcf:citekey>
     <bcf:citekey order="8" intorder="1">Thread_tutorial_2</bcf:citekey>
     <bcf:citekey order="9" intorder="1">Thread_wheelchair</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">Thread_tutorial_2</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="ynt">
